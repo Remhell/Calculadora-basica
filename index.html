@@ -7,18 +7,33 @@
         <title>Calculadora Básica</title>
     </head>
     <body>
-        <h1>Calculadora Básica</h1>
-        <p>Esta calculadora permite realizar operaciones básicas.</p>
-        <label for="number1">Número 1:</label>
-        <input id="number1" />
-        <label for="number2">Número 2:</label>
-        <input id="number2" />
-        <input
-            id="operation"
-            type="text"
-            placeholder="Operación (+, -, *, /)"
-        />
-        <button id="calculate">Calcular</button>
+        <div id="calculator">
+            <input type="text" id="display" />
+            <br />
+            <button id="clear" class="operator">AC</button>
+            <button id="delete" class="operator">DEL</button>
+            <button id="00">00</button>
+            <button id="/" class="operator">/</button>
+            <br />
+            <button id="7">7</button>
+            <button id="8">8</button>
+            <button id="9">9</button>
+            <button id="*">x</button>
+            <br />
+            <button id="4">4</button>
+            <button id="5">5</button>
+            <button id="6">6</button>
+            <button id="-">-</button>
+            <br />
+            <button id="1">1</button>
+            <button id="2">2</button>
+            <button id="3">3</button>
+            <button id="+">+</button>
+            <br />
+            <button id="0">0</button>
+            <button id=".">.</button>
+            <button id="=" class="result operator">=</button>
+        </div>
     </body>
     <script src="main.js"></script>
 </html>
