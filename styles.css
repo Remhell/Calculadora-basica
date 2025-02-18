@@ -2,3 +2,66 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    background-image: url(https://w.wallhaven.cc/full/o5/wallhaven-o5py97.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#calculator {
+    background-color: rgb(24, 24, 37);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    width: 21rem;
+}
+
+#display {
+    border: none;
+    background-color: #313244;
+    color: #cdd6f4;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 1rem;
+    margin-bottom: 8px;
+    width: 91%;
+}
+
+button {
+    background-color: #313244;
+    color: #cdd6f4;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 1rem;
+    margin: 8px;
+    width: 4rem;
+    transition: 0.3s;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.6);
+}
+
+button:focus {
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.result {
+    background-color: #89b4fa;
+    color: #181825;
+    width: 148px;
+}
+
+#clear {
+    background: #f38ba8;
+    color: #181825;
+}
