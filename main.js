@@ -1,6 +1,9 @@
 const display = document.querySelector("#display");
 const buttons = document.querySelectorAll("button");
 
+display.readOnly = true;
+display.focus();
+
 buttons.forEach((btn) => {
   btn.addEventListener("click", () => {
     if (btn.id === "=") {
