@@ -14,3 +14,22 @@ buttons.forEach((btn) => {
     }
   });
 });
+
+display.addEventListener('keydown', (event) => {
+  const key = event.key;
+
+  if (/[0-9]/.test(key) || ['+', '-', '*', '/', '.'].includes(key)) {
+    display.value += key;
+  }
+  else if (key === 'Enter' || key === '=') {
+    display.value = eval(display.value);
+  }
+  else if (key === 'Backspace') {
+    display.value = display.value.slice(0, -1);
+  }
+  else if (key === 'Escape') {
+    display.value = '';
+  }
+
+  event.preventDefault();
+});
